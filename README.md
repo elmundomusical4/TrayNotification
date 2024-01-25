@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/PlusHaze/TrayNotification.svg)](https://jitpack.io/#PlusHaze/TrayNotification)
+[![](https://jitpack.io/v/elmundomusical4/TrayNotification.svg)](https://jitpack.io/#elmundomusical4/TrayNotification)
 
 # Tray Notification
 
