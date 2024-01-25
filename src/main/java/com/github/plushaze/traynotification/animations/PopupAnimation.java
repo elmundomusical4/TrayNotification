@@ -35,17 +35,17 @@ final class PopupAnimation extends AbstractAnimation {
 	protected Timeline setupShowAnimation() {
 		Timeline tl = new Timeline();
 
-		KeyValue kv1 = new KeyValue(stage.yLocationProperty(), stage.getBottomRight().getY() + stage.getWidth(), Interpolator.EASE_BOTH);
+		KeyValue kv1 = new KeyValue(stage.yLocationProperty(), stage.getBottomRight().getY() + stage.getWidth());
 		KeyFrame kf1 = new KeyFrame(Duration.ZERO, kv1);
 
 		KeyValue kv2 = new KeyValue(stage.yLocationProperty(), stage.getBottomRight().getY(), Interpolator.EASE_BOTH);
-		KeyFrame kf2 = new KeyFrame(Duration.millis(2000), kv2);
+		KeyFrame kf2 = new KeyFrame(Duration.millis(1200), kv2);
 
-		KeyValue kv3 = new KeyValue(stage.opacityProperty(), 0.0, Interpolator.EASE_BOTH);
+		KeyValue kv3 = new KeyValue(stage.opacityProperty(), 0.0);
 		KeyFrame kf3 = new KeyFrame(Duration.ZERO, kv3);
 
-		KeyValue kv4 = new KeyValue(stage.opacityProperty(), 1.0, Interpolator.EASE_BOTH);
-		KeyFrame kf4 = new KeyFrame(Duration.millis(2000), kv4);
+		KeyValue kv4 = new KeyValue(stage.opacityProperty(), 1.0);
+		KeyFrame kf4 = new KeyFrame(Duration.millis(1300), kv4);
 
 		tl.getKeyFrames().addAll(kf1, kf2, kf3, kf4);
 
